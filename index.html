@@ -4,35 +4,43 @@
     <meta charset="utf-8">
     <title>Основы HTML5</title>
   <style media="screen">
-  #first{width:70%; column-width: 50px; text-align:left; font:bold;border: 1px solid black;}
+
+      td{border: 1px solid black; text-align: left;vertical-align: top;}
+      table{ border-collapse: collapse;width:70%; column-width: 50px;  font-weight: bold;
+          margin: auto;}
+
+
+      th{border: 0px solid black; text-align: left;}
+      table thead{border:0px solid black;}
   </style>
   </head>
   <body>
-    <p>ЗАДАНИЕ 1</p>
-    <center>  <b>1.1</b> </center>
-    <table id="first">
+
+
+    <table>
+        <thead><th>1.1.</th></thead>
     <tr><td>1</td><td>2</td><td rowspan="2">3</td></tr>
     <tr><td>4</td><td>5</td></tr>
     <tr><td colspan="2">6</td><td>7</td></tr>
     </table>
 
 
-    <center>  <b>1.2</b> </center>
-    <table id="second">
+    <table >
+         <thead><th>1.2.</th></thead>
     <tr><td colspan="3">1</td></tr>
     <tr><td>2</td><td>3</td><td rowspan="3">4</td></tr>
     <tr><td>5</td><td>6</td></tr>
     <tr><td>7</td><td>8</td></tr>
-    <tr><td colspan="3">9</td></tr>
+    <tr><td colspan="3" style="text-align: right">9</td></tr>
     </table>
 
-    <center>  <b>1.3</b> </center>
-    <table id="third">
+    <table> <thead><th>1.3.</th></thead>
     <tr><td >1</td><td>2</td> <td rowspan="2">3</td> <td rowspan="3">8</td> <td rowspan="3">9</td></tr>
     <tr><td>4</td><td>5</td></tr>
     <tr><td colspan="2">6</td><td>7</td></tr>
     <tr><td colspan="3">10</td><td>11</td><td>12</td></tr>
     <tr><td colspan="4">13</td><td>14</td></tr>
     </table>
+
   </body>
 </html>

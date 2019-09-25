@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="rus" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Основы HTML5</title>
+      <link rel="stylesheet" href="assets/css/1.css" />
+  <style media="screen"></style>
+</head>
+<body>
+       <center>  <div style="height: 20px"><p>Выберите задание</p></div>
+           <!--  ------------------------------------------  ЗАДАНИЕ 1   --------------------------------- -->
+<input class="hide" id="hd-1" type="checkbox" >
+<label for="hd-1">Задание 1</label>
+<div> <table>
+        <thead><th>1.1.</th></thead>
+    <tr><td>1</td><td>2</td><td rowspan="2">3</td></tr>  
+    <tr><td>4</td><td>5</td></tr>  
+    <tr><td colspan="2">6</td><td>7</td></tr>  
+    </table>
+
+    <table >
+         <thead><th>1.2.</th></thead>
+    <tr><td colspan="3">1</td></tr>  
+    <tr><td>2</td><td>3</td><td rowspan="3">4</td></tr>  
+    <tr><td>5</td><td>6</td></tr>  
+    <tr><td>7</td><td>8</td></tr>  
+    <tr><td colspan="3" style="text-align: right">9</td></tr>  
+    </table>
+
+    <table> <thead><th>1.3.</th></thead>
+    <tr><td >1</td><td>2</td> <td rowspan="2">3</td> <td rowspan="3">8</td> <td rowspan="3">9</td></tr>  
+    <tr><td>4</td><td>5</td></tr>  
+    <tr><td colspan="2">6</td><td>7</td></tr>  
+    <tr><td colspan="3">10</td><td>11</td><td>12</td></tr>  
+    <tr><td colspan="4">13</td><td>14</td></tr>  
+    </table>
+</div>
+      <br>
+           
+<!--  ------------------------------------------  ЗАДАНИЕ 2,4    --------------------------------- -->
+<input class="hide" id="hd-2" type="checkbox" >
+<label for="hd-2">Задание 2,4</label>
+<div><hr><h3>Игра престолов</h3>
+      <img src="media/1PR_24.png" alt="Not found" width="80%" height="80%">
+      <p><strong>«Игра́ престо́лов» </strong> — американский телесериал в жанре фэнтези, основанный на цикле романов «Песнь Льда и Огня» Джорджа Р. Р. Мартина. Снят под руководством Дэвида Бениоффа и Д. Б. Уайсса для кабельного телеканала HBO. Съёмки велись в нескольких странах, включая Великобританию (Северная Ирландия), Мальту, Хорватию, Исландию и Марокко. Премьера первого сезона в США состоялась 17 апреля 2011 года, последняя серия финального сезона демонстрировалась 19 мая 2019 года.
+        <br>Действие «Игры престолов» происходит в вымышленном мире, напоминающем средневековую Европу. В сериале одновременно действует множество персонажей и развивается несколько сюжетных линий. Основных сюжетных арок три: первая посвящена борьбе нескольких влиятельных домов за Железный Трон Семи Королевств либо за независимость от него; вторая — потомку свергнутой династии правителей, принцессе-изгнаннице, планирующей вернуть престол; третья — древнему братству, охраняющему государство от угроз с севера.<br> <em>Зима близко</em> 
+        </p>
+      <h4>Главные персонажи</h4>
+      <ol>
+        <li>Тирион Ланнистер</li>
+        <li>Джон Сноу</li>
+        <li>Дейенерис Таргариен</li>
+        <li>Серсея Ланнистер</li>
+        <li>Санса Старк</li>
+        <li>Арья Старк</li>
+        <li>Джейме Ланнистер</li>
+        <li>Джорах Мормонт</li>
+        <li>Теон Грейджой</li>
+        <li>Сэмвелл Тарли</li>
+        <li>Варис</li>
+      </ol>
+ 
+        <h5>Награды и номинации</h5>
+        <ul>
+          <li>«Эмми»</li>
+          <li>Scream</li>
+          <li>Премия Ассоциации телевизионных критиков</li>
+          <li>Спутник</li>
+          <li>Премия Гильдии киноактёров США</li>
+          <li>«Золотой глобус»</li>
+          <li>Премия Джорджа Фостера Пибоди</li>
+                  </ul> 
+      <p><strong>Главный музыкальный мотив</strong></p>
+      <audio controls preload="auto">
+        <source src="media/main_theme.mp3" type="audio/mp3">
+      </audio>
+      <p><strong>Заставка сериала</strong></p> 
+    <div> <video controls preload="auto" poster="media/player_bg.jpg" width="80%" height="80%">
+        <source src="media/intro.mp4" type="video/mp4">
+      </video></div> 
+      <hr>
+</div><br>
+  <!--  ------------------------------------------  ЗАДАНИЕ 3    --------------------------------- -->
+           <input class="hide" id="hd-3" type="checkbox" >
+           <label for="hd-3">Задание 3</label>
+<div>
+           <form id="employee">
+        <h3>Данные о безработном на бирже труда</h3>
+        <fieldset>
+          <legend>Анкетные данные</legend>
+          <p>
+            <label>Фамилия:</label><input type="text" maxlength="15" required size="8">
+            <label>Имя:</label><input type="text" maxlength="20" required size="8">
+            <label>Отчество:</label><input type="text" maxlength="20" required size="9">
+            <label>Пол:</label>
+              <select required>
+                   <option selected hidden> </option>
+                  <option>Мужской</option>
+            <option>Женский</option>
+                  </select> <br><br>    
+              <label>Семейное положение:</label>
+              <select required>
+                   <option selected hidden> </option>
+                  <option>В браке</option>
+            <option>Не состою в браке</option>                 
+                  </select>
+          </p>
+        </fieldset>
+        <fieldset >
+          <p>
+            <label>Образование: </label>
+            <select required>
+                 <option selected hidden> </option>
+            <option>Среднее</option>
+            <option>Среднее специальное</option>
+            <option>Высшее</option>
+          </select>
+          <label>Специальность: </label><input type="text" required>     
+        </p>
+        <p>
+          <label>Профессия </label><input type="text" required maxlength="52">
+          <label>Место последней работы:</label><input type="text" required ><br><br>
+            <label>Должность последней работы:</label><input type="text" required > </p>
+         <p>     <textarea name="reason" required placeholder="Расскажите нам о причине вашего увольнения с прошлого места работы..." rows="6" cols="40"></textarea>      
+        </p>
+        <p>
+          <label>Жилищные условия:</label><select required>
+                 <option selected hidden> </option>
+            <option>Нет собственного места проживания</option>
+            <option>Собственное имущество</option>
+            <option>Съемное имущество</option>
+            <option>Приют для бездомных</option>
+                     </select>
+        </p>
+        </fieldset>     
+<fieldset >
+        <p>
+          <label>Телефон: </label><input type="tel" required maxlength="20">
+          <label>E-mail:</label><input type="email" required maxlength="35" ><br><br>
+            <label>Ссылка на ваш профиль в интернете:</label><input type="url"  > </p>
+         <p>     <textarea name="expectations" required placeholder="Расскажите нам, о ваших требованиях к будущей работе " rows="6" cols="40"></textarea>      
+        </p>
+               </fieldset>
+               <fieldset>
+          <p><input type="submit" value="Принять"></p>
+          <p><input type="reset" value="Сброс"></p>
+        </fieldset>
+      </form>   
+</div>
+      <br>
+           <p>&copy; Anastasia Dutchina</p>
+      </center> 
+  </body>
+</html>

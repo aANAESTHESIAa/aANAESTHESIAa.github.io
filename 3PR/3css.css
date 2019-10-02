@@ -418,9 +418,10 @@ body {
     transform: translateY(0px);
     transform: rotate(0deg);
     transform: skewX(0deg);
+    transform-origin: top right;
 }
 
-/*               12*/
+/*               11!!!!!!!!!!!!!!!!1*/
     #twelve>table {
     width: 500px;
     font-family: Arial;
@@ -442,9 +443,11 @@ body {
 #twelve>td {
     padding: 10px;
 }
-
+#twelve>tr{
+    
+}
 #twelve>td:empty {
-    background: #ffcccc;
+    background: #ff9e9e;
 }
 
 .Number {

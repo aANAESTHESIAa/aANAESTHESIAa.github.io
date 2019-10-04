@@ -1,3 +1,15 @@
+root: {
+  --text-color: DarkBlue;
+  --back-color: Azure;
+}
+body { color: var(--text-color); background: var(--back-color)}
+@media (prefers-dark-interface) {
+  root: {
+   --text-color: Azure;
+   --back-color: DarkBlue;
+  } 
+}
+
 .wrapper {
   display: flex;  
   flex-flow: row wrap;

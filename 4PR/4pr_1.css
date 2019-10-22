@@ -62,10 +62,12 @@ header, footer, article, nav, div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  
     
 }
 .flexbox_item{
-     box-sizing: border-box;
+color: black;
+    border-radius: 10% 10% 10% 10% / 0% 0% 10% 10%;
 
 }
 .footer{ align-content: flex-end;
@@ -73,27 +75,34 @@ header, footer, article, nav, div {
     width: 100%;
     color: aliceblue;
     height: 50px;
-    align-content: flex-end;
+/*    align-content: flex-end;*/
+/*    justify-content: flex-end;*/
+    flex:1;
 
 
 }
 .flexbox_item:nth-child(1){
     background-color: blue;
-    width: 60%;
-      height: 60%;
+    width: 55%;
+      height: 90%;
+
+   
+}
+a{
     color: aliceblue;
+
 }
 .flexbox_item:nth-child(2){
     background-color: violet;
     width: 25%;
       height: 30%;
-    color: aliceblue;
+   
 }
 .flexbox_item:nth-child(3){
     background-color: greenyellow;
-    width: 15%;
-      height: 30%;
-    color: aliceblue;
+    width: 20%;
+      height: 50%;
+    
 }
 .flexbox_vertical {
     display: flex;
@@ -103,9 +112,14 @@ header, footer, article, nav, div {
 
 .flexbox_head {
     height: 50px;
+    color: black;
+    background-color: gray;
 }
 
 .flexbox_horizontal { display: flex;
     flex-direction: row;
-    height:500px;
+    height:650px;
 }
+div{font-weight: 300;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: whitesmoke;}

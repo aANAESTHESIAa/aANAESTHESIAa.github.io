@@ -1,12 +1,13 @@
 body { 
   display: grid;
   grid-template-areas: 
-    "header header header"
-    "article nav ads"
-    "footer footer footer";
-  grid-template-rows: 80px 1fr 70px;  
-  grid-template-columns: 60% 15% 25%;
-  grid-row-gap: 10px;
+    "header header "
+    "content  nav"
+      "stuff stuff"
+    "footer footer ";
+  grid-template-rows: 80px 1fr 1fr 70px;  
+  grid-template-columns: 70% 30%;
+  grid-row-gap: 0px;
 /*  grid-column-gap: 10px;*/
   height: 100vh;
   margin: 0;
@@ -16,9 +17,9 @@ body {
   body { 
     grid-template-areas: 
       "header"
-      "article"
-      "ads"
+      "content"
       "nav"
+      "stuff"
       "footer";
     grid-template-rows: 80px 1fr 70px 1fr 70px;  
     grid-template-columns: 1fr;
@@ -40,17 +41,17 @@ header, footer, article, nav, div {
       background: black;
   }
 #mainArticle { 
-  grid-area: article;  
-    height: 70%;
-      background: blue;
+  grid-area: content;  
+    height: 400px;
+      background: #52afff;
   }
 #stuff { 
-  grid-area: nav; 
-    height: 30%;
-      background: violet;
+  grid-area: stuff; 
+    height: 100%;
+      background: #9b009b;
   }
 #navi { 
-  grid-area: ads; 
-    height: 20%;
-      background: lightgreen;
+  grid-area: nav; 
+    height: 300px;
+      background: rgb(1, 206, 1);
   }

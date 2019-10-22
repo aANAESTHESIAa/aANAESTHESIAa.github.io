@@ -13,6 +13,7 @@ body {
   margin: 0;
   }  
 /* Stack the layout on small devices/viewports. */
+/*
 @media all and (max-width: 575px) {
   body { 
     grid-template-areas: 
@@ -25,6 +26,7 @@ body {
     grid-template-columns: 1fr;
  }
 }
+*/
 header, footer, article, nav, div {
   padding: 1.2em;
 

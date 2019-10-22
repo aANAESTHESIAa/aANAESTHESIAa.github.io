@@ -61,7 +61,7 @@ header, footer, article, nav, div {
 .flexbox{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    
 }
 .flexbox_item{
      box-sizing: border-box;
@@ -73,6 +73,15 @@ header, footer, article, nav, div {
     color: aliceblue;
     height: 50px;
 
+}
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
 }
 .flexbox_item:nth-child(1){
     background-color: darkgrey;

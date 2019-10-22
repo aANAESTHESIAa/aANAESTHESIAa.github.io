@@ -1,34 +1,56 @@
-
-.container { display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 40px 60% 20px;
-    grid-template-areas: "header header header"
-                            "content nav stuff"
-                            "footer footer footer";
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "article nav ads"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 60% 15% 25%;
+  grid-row-gap: 10px;
+/*  grid-column-gap: 10px;*/
+  height: 100vh;
+  margin: 0;
+  }  
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
 }
+header, footer, article, nav, div {
+  padding: 1.2em;
 
-.header {
-    grid-area: header;
-    background-color: blue;
-}
-
-.contents {
-    grid-area: content;
-    background-color: violet;
-}
-
-.navi {
-    grid-area: nav;
-    background-color: turquoise;
-}
-
-.stuff {
-    grid-area: stuff;
-    background-color: green;
-        
-}
-
-.footer {
-    grid-area: footer;
-    background-color: black;
-}
+    font-weight: 300;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: whitesmoke;
+  }
+#pageHeader {
+  grid-area: header;
+      background: grey;
+  }
+#pageFooter {
+  grid-area: footer;
+      background: black;
+  }
+#mainArticle { 
+  grid-area: article;  
+    height: 70%;
+      background: blue;
+  }
+#stuff { 
+  grid-area: nav; 
+    height: 30%;
+      background: violet;
+  }
+#navi { 
+  grid-area: ads; 
+    height: 20%;
+      background: lightgreen;
+  }

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>WEB-Lab5 </title>
+      <link rel="shortcut icon" href="/myIcon.ico" type="image/x-icon">
+    <script type="text/javascript" src="script.js"></script>
+      <style>
+          div{
+              border: solid 2px black;
+              width: 100%;
+              align-content: center;
+          }
+          form{
+              padding: 10px;
+          }
+      </style>
+  </head>
+
+  <body>
+      <div>
+    <form name="task1">
+      <p> ЗАДАНИЕ 1<br/>
+        Даны длины ребер a, b, c прямоугольного параллелепипеда. Найти его объем V = a·b·c и площадь поверхности S = 2·(a·b + b·c + a·c). <br/>
+        
+      </p>
+      <p>а = <input type ="number" name="a" size=3 required><br/></p>
+         <p>b = <input type ="number" name="b" size=3 required><br/></p>
+        <p>c = <input type ="number" name="c" size=3 required><br/></p>
+      <input type ="button" value="Рассчитать" onClick="first(task1)">
+
+      <p>V = <input type ="number" name="Vol" disabled><br/></p>
+      <p>S = <input type ="number" name="Sq" disabled><br/></p>
+    </form></div>
+<!--                        !!-->
+     <div> <form name="task2">
+      <p>ЗАДАНИЕ 2<br/>
+        Даны два числа. Вывести порядковый номер меньшего из них. <br/>
+        
+      </p>
+      <p>а = <input type ="number" name="fst" size=3 required><br/></p>
+         <p>b = <input type ="number" name="sec" size=3 required><br/></p>
+             <input type ="button" value="Рассчитать" onClick="second(task2)">
+ </form></div>
+<!--                !!!!!!!!!!!!!!!!!-->
+   <div><form name="task3">
+      <p>ЗАДАНИЕ 3<br/>
+        Дан номер месяца — целое число в диапазоне 1–12 (1 — январь, 2 — февраль и т. д.). Определить количество дней в этом месяце для невисокосного года. <br/>
+        
+      </p>
+      <p>месяц  <input type ="number" name="month" size=2 required><br/></p>
+         
+             <input type ="button" value="Рассчитать" onClick="third(task3)">
+ </form> </div>      
+   <!--                !!!!!!!!!!!!!!!!!-->
+   <div><form name="task4">
+      <p>ЗАДАНИЕ 4<br/>
+        Дано вещественное число — цена 1 кг конфет. Вывести стоимость 1, 2, …, 10 кг конфет. <br/>
+        
+      </p>
+      <p>цена 1 кг конфет  <input type ="number" name="price" size=2 required><br/></p>
+         
+             <input type ="button" value="Рассчитать" onClick="fourth(task4)">
+ </form>  </div>     
+<!--        !!!!!!!!!!!!!!!!!!!!!!!!-->
+    <div>  <form name="task5">
+      <p>ЗАДАНИЕ 5<br/>
+     Дано целое число N (> 0). Если оно является степенью числа 5, то вывести true, если не является — вывести false. <br/>
+        
+      </p>
+      <p>введите число: <input type ="number" name="input" size=2 required><br/></p>
+         
+             <input type ="button" value="Рассчитать" onClick="fifth(task5)">
+ </form>   </div>    
+<!--        !!!!!!!!!!!!!!!!!!!!!!!!-->
+   <div>   <form name="task6">
+      <p>ЗАДАНИЕ 6<br/>
+      Описать функцию RingS(R1, R2), находящую площадь кольца, заключенного между двумя окружностями с общим центром и радиусами R1 и R2 (R1 > R2). С ее помощью найти площади трех колец, для которых даны внешние и внутренние радиусы. Воспользоваться формулой площади круга радиуса R: S = π·R2. <br/>
+        
+      </p>
+      <p>R1 Внутренний радиус 1го кольца <input type ="number" name="r1" size=2 required><br/></p>
+          <p>R2 Внешний радиус 1го кольца <input type ="number" name="r2" size=2 required><br/></p>
+         
+           <p>R3 Внутренний радиус 2го кольца <input type ="number" name="r3" size=2 required><br/></p>
+           <p>R4 Внешний радиус 2го кольца <input type ="number" name="r4" size=2 required><br/></p>
+           <p>R5 Внутренний радиус 3го кольца <input type ="number" name="r5" size=2 required><br/></p>
+           <p>R6 Внешний радиус 3го кольца <input type ="number" name="r6" size=2 required><br/></p>
+          
+          
+          
+         <p>площадь 1го кольца <input type="text" size=10 name="res1" disabled><br/><br/>площадь 2го кольца <input type="text" size=10 name="res2" disabled><br/><br/>площадь 3го кольца 
+          <input type="text" size=10 name="res3" disabled></p>
+          
+          
+             <input type ="button" value="Рассчитать" onClick="sixth(task6)">
+ </form>  </div>     
+<!--        !!!!!!!!!!!!!!!!!!!!!!!!-->
+      <div>  <form name="task7">
+      <p>ЗАДАНИЕ 7<br/>
+      Дано целое число N и набор из N чисел. Найти номер минимального элемента из данного набора.<br/>
+        
+      </p>
+      <p>N  <input type ="number" name="N" size=3 required><br/></p>
+          
+         
+             <input type ="button" value="Рассчитать" onClick="seventh(task7)">
+ </form>   </div>     
+<!--        !!!!!!!!!!!!!!!!!!!!!!!!-->
+     <div> <form name="task8">
+      <p>ЗАДАНИЕ 8<br/>
+      Даны целые числа N (> 2), A и B. Сформировать и вывести целочисленный массив размера N, первый элемент которого равен A, второй равен B, а каждый последующий элемент равен сумме всех предыдущих.<br/>
+        
+      </p>
+      <p>N  <input type ="number" name="N" size=3 required><br/></p>
+           <p>A  <input type ="number" name="A" size=3 required><br/></p>
+           <p>B  <input type ="number" name="B" size=3 required><br/></p>
+          
+         
+             <input type ="button" value="Рассчитать" onClick="eighth(task8)">
+ </form>   </div>     
+<!--        !!!!!!!!!!!!!!!!!!!!!!!!-->
+   <div>   <form name="task9">
+      <p>ЗАДАНИЕ 9<br/>
+      Дан массив размера N. Поменять местами его минимальный и максимальный элементы.<br/>
+        
+      </p>
+      <p>N  <input type ="number" name="N" size=3 required><br/></p>
+          
+          
+         
+             <input type ="button" value="Рассчитать" onClick="nineth(task9)">
+ </form>  </div>     
+<!--        !!!!!!!!!!!!!!!!!!!!!!!!-->
+    <div> <form name="task10">
+      <p>ЗАДАНИЕ 10<br/>
+      Дана строка. Преобразовать в ней все строчные буквы (как латинские, так и русские) в прописные, а прописные — в строчные.<br/>
+        
+      </p>
+      <p>N  <input type ="text" name="line" size=40 required><br/></p>
+          
+          
+         
+             <input type ="button" value="Рассчитать" onClick="tenth(task10)">
+ </form>    </div>    
+<!--        !!!!!!!!!!!!!!!!!!!!!!!!-->
+    <div>  <form name="task11">
+      <p>ЗАДАНИЕ 11<br/>
+      Разработать класс для описания параллелепипеда. 
+Поля: 
+•	ширина, длина и высота параллелепипеда w, l и h;
+•	площадь поверхности S;
+•	объем V;
+•	диагональ параллелепипеда d.
+Методы: 
+•	конструктор: присвоение нулевых значений переменным;
+•	ввод пользователем с клавиатуры значений свойств класса; 
+•	расчет величины диагонали параллелепипеда и вывод ее значения на экран;
+•	расчет и вывод на экран площади поверхности параллелепипеда;
+•	расчет объема параллелепипеда и вывод его значения на экран.
+<br/>
+          Введите параметры парллелепипеда
+        
+      </p>
+      <p>ширина  <input type ="number" name="W" size=3 required> см<br/></p>
+          <p>длина  <input type ="number" name="L" size=3 required>см<br/></p>
+          <p>высота  <input type ="number" name="H" size=3 required> см<br/></p>
+          <p>площадь поверхности  <input type ="number" name="S" size=3 disabled> см^2<br/></p>
+          <p>объем  <input type ="number" name="V" size=3 disabled> см^3<br/></p>
+          <p>диагональ параллелепипеда  <input type ="number" name="D" size=3 disabled> см<br/> </p>
+          
+          
+          
+         
+             <input type ="button" value="Рассчитать" onClick="per(task11)">
+           <input type ="button" value="Рассчитать" onClick="eleven(task11)">
+ </form>    </div>   
+<!--        !!!!!!!!!!!!!!!!!!!!!!!!-->
+  </body>
+</html>

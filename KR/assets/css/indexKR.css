@@ -1,0 +1,192 @@
+
+.wrapper {
+  height: 100vh;
+    margin-bottom: -35px;
+}
+
+.parallax-img {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    text-align: center;
+
+    
+}
+
+
+footer{
+    height: 35px;
+    background:  red;
+    padding-bottom: 0px;
+    font-family: Candara;
+  color: #281C1C;
+}
+body {
+  margin: 0;
+  background: #F0EDDC;
+}
+
+* {
+  font-family: Candara;
+  color: black;
+}
+input{
+    color: black;
+}
+h1 {
+  margin: 15px;
+  text-align: center;
+}
+
+p {
+  margin: 15px;
+  font-size: 2.1rem;
+    padding-left: 50px;
+    padding-right: 50px;
+ 
+}
+
+.parallax-img p{
+    color: #d2e7ec
+}
+
+
+.form{ 
+    margin-top: 230px;
+}
+.form form{ width: 350px;
+    border: solid 3px white;
+    padding-bottom: 15px;
+}
+.parallax-img {
+/*  background-image: url('https://source.unsplash.com/random/1920x1080');*/
+    background-image: url(../../images/this.jpg);
+
+}
+ h2 {
+    mix-blend-mode: exclusion;
+    font-family: Candara;
+    font-size: 5rem;
+    text-align: center;
+    margin: 0; 
+    padding: 20vh 200px;
+    color: #97b3ff;
+  }
+/*топ меню*/
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  background: #F0EDDC;
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {display: inline-block;
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #281C1C;
+  transition:.3s linear;
+}
+.menu-main a:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #281C1C;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translateX(6.5px);
+  opacity: 0;
+  transition: .3s linear;
+}
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 660px) {
+.menu-main {
+  float: none;
+  padding-top: 20px;
+}
+.top-menu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.menu-main li {display: block;}
+    
+    
+}
+body{margin=0;}
+/*форма*/
+.form input[type=checkbox] {
+    display:none;
+}
+.form input[type=checkbox] + label {
+    display: block;
+    position: relative;
+    margin: 12px 0 12px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+.form input[type=checkbox] + label:hover {
+    color:#D66F2D;
+}
+.form input[type=checkbox] + label:before {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    left: -30px;
+    border: 1px solid #808080;
+}
+.form input[type=checkbox]:checked + label:before{
+    content: '\2714';
+    color:#D66F2D;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #D66F2D; 
+}
+.form input[type=submit] {
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 30px;
+    border: 1px solid #D66F2D;
+    background: #D66F2D;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: .4s all;
+    font-weight: bold;
+}
+.form input[type=submit]:hover {
+    background: #c4550d;
+}
+.form input[disabled] {
+    opacity: .6;
+    cursor: not-allowed;
+}

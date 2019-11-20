@@ -1,0 +1,41 @@
+div {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 35px;
+}
+
+.menu li {
+  background-color: #d68739;
+}
+
+.menu_item {
+  margin-right: 1px;
+}
+
+.menu {
+  display: flex;
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  padding-left:2px;
+}
+
+.submenu_item {
+  margin-top: 1px;
+  margin-left: 0px;
+  width:123px;
+}

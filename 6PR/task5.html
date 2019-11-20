@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>WEB-Lab6 Task5</title>
+    <script type="text/javascript" src="scripts/script5.js"></script>
+  </head>
+
+  <body>
+      <center>
+  
+
+<input id="inp">
+
+<script>
+
+document.getElementById('inp').onkeyup = function () {
+
+    var reg = /[A-Z]/g;
+
+    if (this.value.search(reg) !=  -1) {
+
+        this.value  =  this.value.replace(reg, '');
+
+    }
+
+}
+
+</script>
+
+
+<!--      <input type="text" onkeyup="var yratext=/['A-Z']/; if(yratext.test(this.value)) this.value=''"><br/>-->
+        <a href="task6.html">6 Задание</a>
+      </center>
+  </body>
+</html>

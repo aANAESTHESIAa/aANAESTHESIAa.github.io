@@ -1,0 +1,19 @@
+#left_img {
+  width: 400px;
+  height: 700px;
+  opacity: .3;
+}
+
+#center_img {
+  position: absolute;
+  left: 150px;
+  width: 400px;
+  height: 700px;
+  z-index: 1;
+}
+
+#right_img {
+  width: 400px;
+  height: 700px;
+  opacity: .3;
+}

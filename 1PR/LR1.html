@@ -7,6 +7,7 @@
   <style media="screen"></style>
       <link rel="shortcut icon" href="/myIcon.ico" type="image/x-icon">
 <link rel="icon" href="myIcon.ico" type="image/x-icon">
+    <script type="text/javascript" src="assets/script1PR.js"></script>
 </head>
 <body><a href="https://aanaesthesiaa.github.io./">Вернуться на главную</a>
        <center>  <div style="height: 20px"><p>Выберите задание</p></div>
@@ -86,14 +87,15 @@
            <input class="hide" id="hd-3" type="checkbox" >
            <label for="hd-3">Задание 3</label>
 <div>
-           <form id="employee">
+           <form id="employee" name="formaa">
+               
         <h3>Данные о безработном на бирже труда</h3>
         <fieldset>
           <legend>Анкетные данные</legend>
           <p>
-            <label>Фамилия:</label><input type="text" maxlength="15" required size="8">
-            <label>Имя:</label><input type="text" maxlength="20" required size="8">
-            <label>Отчество:</label><input type="text" maxlength="20" required size="9">
+            <label>Фамилия:</label><input type="text" id="cLN" maxlength="15" required size="8" >
+            <label>Имя:</label><input type="text" id="cFN" maxlength="20" required size="8">
+            <label>Отчество:</label><input type="text" id="cFaN" maxlength="20" required size="9">
             <label>Пол:</label>
               <select required>
                    <option selected hidden> </option>
@@ -120,9 +122,9 @@
           <label>Специальность: </label><input type="text" required>     
         </p>
         <p>
-          <label>Профессия </label><input type="text" required maxlength="52">
-          <label>Место последней работы:</label><input type="text" required ><br><br>
-            <label>Должность последней работы:</label><input type="text" required > </p>
+          <label>Профессия </label><input type="text" id="cProf" required maxlength="52">
+          <label>Место последней работы:</label><input type="text" id="cLastWP" required ><br><br>
+            <label>Должность последней работы:</label><input type="text" id="cPos" required > </p>
          <p>     <textarea name="reason" required placeholder="Расскажите нам о причине вашего увольнения с прошлого места работы..." rows="6" cols="40"></textarea>      
         </p>
         <p>
@@ -137,14 +139,14 @@
         </fieldset>     
 <fieldset >
         <p>
-          <label>Телефон: </label><input type="tel" required maxlength="20">
-          <label>E-mail:</label><input type="email" required maxlength="35" ><br><br>
+          <label>Телефон: </label><input type="tel" id="cPhone" required maxlength="20">
+          <label>E-mail:</label><input type="email"  required maxlength="35" ><br><br>
             <label>Ссылка на ваш профиль в интернете:</label><input type="url"  > </p>
          <p>     <textarea name="expectations" required placeholder="Расскажите нам, о ваших требованиях к будущей работе " rows="6" cols="40"></textarea>      
         </p>
                </fieldset>
                <fieldset>
-          <p><input type="submit" value="Принять"></p>
+          <p><input type="button" value="Принять" onClick="verify(formaa)"></p>
           <p><input type="reset" value="Сброс"></p>
         </fieldset>
       </form>   

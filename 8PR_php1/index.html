@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="rus" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Основы HTML5</title>
+    
+  <style media="screen"></style>
+      <link rel="shortcut icon" href="/myIcon.ico" type="image/x-icon">
+<link rel="icon" href="myIcon.ico" type="image/x-icon">
+    <script type="text/javascript" src="assets/script1PR.js"></script>
+</head>
+<body><a href="https://aanaesthesiaa.github.io./">Вернуться на главную</a>
+       <center>  
+<div>
+           <form action="login.php" method="GET">
+       
+        <fieldset>
+          <legend>Анкетные данные</legend>
+          <p>
+            <label>Введите ваше ФИО:</label><input type="text" id="cLN" maxlength="15" required size="8" name="FIO" >
+            <label>Введите пароль:</label><input type="text" id="cFN" maxlength="20" required size="8" name="PSW">
+            <p>Какой диск вы хотите получить?</p>
+
+<div>
+  <input type="radio" id="huey" name="drone" value="CD"
+         checked>
+  <label for="huey">CD</label>
+</div>
+
+<div>
+  <input type="radio" id="dewey" name="drone" value="DVD">
+  <label for="dewey">DVD</label>
+</div>
+            <label>Выберите тип доставки:</label>
+              <select required>
+                   <option selected hidden> </option>
+                  <option>Срочная</option>
+                  <option>Несрочная</option>
+            <option>Самовывоз</option>
+                  </select> <br><br>    
+                          
+                 <textarea name="adress" required placeholder="Cтрана,регион, город, почтовый индекс, улица, дом, квартира" rows="6" cols="40"></textarea>
+          
+        </fieldset>
+     
+          <p><input type="submit" value="Cделать заказ" onClick="verify(formaa)"></p>
+          <p><input type="reset" value="Отмена"></p>
+      
+      </form>   
+           </div></center></body></html>
